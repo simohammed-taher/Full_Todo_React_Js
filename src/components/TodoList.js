@@ -12,7 +12,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useMemo } from "react";
 import { TodosContext } from "../contexts/todosContext";
 
 export default function TodoList() {
@@ -31,12 +31,18 @@ export default function TodoList() {
   // }
 
   //filteration arrays
-  const completedTodos = todos.filter((t) => {
-    return t.isCompleted;
-  });
-  const notcompletedTodos = todos.filter((t) => {
-    return !t.isCompleted;
-  });
+  const completedTodos = useMemo(() => {
+    return todos.filter((t) => {
+      console.log("Completed");
+      return t.isCompleted;
+    });
+  }, [todos]);
+  const notcompletedTodos = useMemo(() => {
+    return todos.filter((t) => {
+      console.log("Not-Completed");
+      return !t.isCompleted;
+    });
+  }, [todos]);
   let todosToBeRendered = todos;
   if (displayedTodosType == "completed") {
     todosToBeRendered = completedTodos;

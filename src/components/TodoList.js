@@ -14,9 +14,12 @@ import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
 import { useContext, useEffect, useMemo } from "react";
 import { TodosContext } from "../contexts/todosContext";
-
+import { ToastContext } from "../contexts/toastContext";
 export default function TodoList() {
   const { todos, setTodos } = useContext(TodosContext);
+
+  const { showHideToast } = useContext(ToastContext);
+
   const [titleInput, setTitleInput] = useState("");
   const [displayedTodosType, setDisplayedTodosType] = useState("all");
 
@@ -75,6 +78,7 @@ export default function TodoList() {
     setTodos(updatedTodos);
     localStorage.setItem("todos", JSON.stringify(updatedTodos));
     setTitleInput("");
+    showHideToast("Add successfully");
   }
   return (
     <Container maxWidth="md">

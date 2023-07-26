@@ -16,7 +16,9 @@ that a is a simple web application built using React.js . It allows you to add a
 
 ## Demo
 
-https://github.com/simohammed-taher/Full_Todo_React_Js/assets/100471051/810f870c-c7af-4366-be2a-285fea0b85a6
+[**DEMO**](https://github.com/simohammed-taher/Full_Todo_React_Js)
+
+https://github.com/simohammed-taher/Full_Todo_React_Js/assets/100471051/6154a3d8-6516-40fa-95f6-21498a9de36e
 
 ## Features
 

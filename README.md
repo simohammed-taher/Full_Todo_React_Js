@@ -18,7 +18,7 @@ This is a simple web application built using React.js. It allows you to add and 
 
 [**DEMO**](https://github.com/simohammed-taher/Full_Todo_React_Js)
 
-![Demo](https://github.com/simohammed-taher/Full_Todo_React_Js/assets/100471051/6154a3d8-6516-40fa-95f6-21498a9de36e)
+https://github.com/simohammed-taher/Full_Todo_React_Js/assets/100471051/6154a3d8-6516-40fa-95f6-21498a9de36e
 
 ## ✨ Features
 
